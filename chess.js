@@ -1,5 +1,5 @@
-// Chessboard setup
 const chessboard = document.getElementById("chessboard");
+
 const initialBoard = [
   ["♜", "♞", "♝", "♛", "♚", "♝", "♞", "♜"],
   ["♟", "♟", "♟", "♟", "♟", "♟", "♟", "♟"],
@@ -32,18 +32,15 @@ function renderBoard(board) {
 
 function handleSquareClick(row, col) {
   if (selectedPiece) {
-    // Move piece to new position
     initialBoard[row][col] = selectedPiece;
     initialBoard[selectedPosition.row][selectedPosition.col] = "";
     selectedPiece = null;
     selectedPosition = null;
     renderBoard(initialBoard);
   } else {
-    // Select piece
     if (initialBoard[row][col] !== "") {
       selectedPiece = initialBoard[row][col];
       selectedPosition = { row, col };
-      console.log(`Selected piece: ${selectedPiece} at [${row}, ${col}]`);
     }
   }
 }
