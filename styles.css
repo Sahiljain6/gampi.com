@@ -105,3 +105,39 @@ h1 {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+/* Tic Tac Toe Board */
+#tictactoe-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 20px auto;
+  width: 310px;
+}
+
+.tic-square {
+  width: 100px;
+  height: 100px;
+  background: #f4f4f9;
+  border: 2px solid #d1d1d1;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tic-square:hover {
+  background: #eaeaea;
+  transform: scale(1.05);
+}
+
+/* Game Status */
+.status {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #444;
+}
