@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Hub</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to the Game Hub</h1>
-  <div class="game-cards">
-    <a href="chess.html" class="game-card">
-      <h2>Chess</h2>
-      <p>Click to play Chess!</p>
-    </a>
-    <a href="tictactoe.html" class="game-card">
-      <h2>Tic Tac Toe</h2>
-      <p>Click to play Tic Tac Toe!</p>
-    </a>
-  </div>
+    <h1 class="game-header">Game Hub</h1>
+    <div class="game-container">
+        <!-- Chess Card -->
+        <div class="game-card">
+            <img src="chess.jpg" alt="Chess" class="game-image">
+            <h2>Chess</h2>
+            <p>Play the classic game of strategy and skill.</p>
+            <a href="chess.html" class="play-button">Play Chess</a>
+        </div>
+        <!-- Tic Tac Toe Card -->
+        <div class="game-card">
+            <img src="tictactoe.jpg" alt="Tic Tac Toe" class="game-image">
+            <h2>Tic Tac Toe</h2>
+            <p>Enjoy a quick and fun game of Tic Tac Toe.</p>
+            <a href="tictactoe.html" class="play-button">Play Tic Tac Toe</a>
+        </div>
+    </div>
 </body>
 </html>
