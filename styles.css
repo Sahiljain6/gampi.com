@@ -178,7 +178,7 @@ h1 {
 /* Game Image */
 .game-image {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: contain; /* Maintain aspect ratio */
     object-fit: cover; /* Ensures the image covers the container */
     border-radius: 8px; /* Matches the card's border-radius */
 }
