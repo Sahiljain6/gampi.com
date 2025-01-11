@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="typing-test-container">
+        <h1>Typing Speed Test</h1>
+        <p class="instructions">Type the text below as quickly and accurately as possible!</p>
+        <div class="typing-text" id="typingText"></div>
+        <textarea id="typingInput" placeholder="Start typing here..." rows="5"></textarea>
+        <div class="stats">
+            <p>Time Left: <span id="timeLeft">30</span> seconds</p>
+            <p>Words Per Minute (WPM): <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="accuracy">100</span>%</p>
+        </div>
+        <button id="restartButton">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
